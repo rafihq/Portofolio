@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Profesional Muhammad Rafi Pratama Putra - Mahasiswa Teknik Informatika & Web Developer. Spesialisasi PHP, MySQL, JavaScript, dan NLP.">
+  <meta name="author" content="Muhammad Rafi Pratama Putra">
+  <title>Muhammad Rafi Pratama Putra | Portfolio Web Developer</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans for clean typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for clean developer icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Rafi<span>.dev</span></a>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">Tentang Saya</a>
+        <a href="#skills" class="nav-link">Keahlian</a>
+        <a href="#projects" class="nav-link">Project</a>
+        <a href="#education" class="nav-link">Pendidikan</a>
+        <a href="#experience" class="nav-link">Pengalaman</a>
+        <a href="#contact" class="nav-link nav-btn">Hubungi Saya</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-badge">Web Developer Portfolio</div>
+      <h1 class="hero-name">Muhammad Rafi<br>Pratama Putra</h1>
+      <p class="hero-title">Mahasiswa Teknik Informatika | Web Developer</p>
+      
+      <div class="hero-meta-grid">
+        <div class="hero-meta-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>muhammadrafipratamaputra00@gmail.com</span>
+          <button class="copy-btn" data-copy="muhammadrafipratamaputra00@gmail.com" title="Salin Email">
+            <i class="fa-regular fa-copy"></i>
+          </button>
+        </div>
+        <div class="hero-meta-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>085137116287</span>
+          <button class="copy-btn" data-copy="085137116287" title="Salin Nomor">
+            <i class="fa-regular fa-copy"></i>
+          </button>
+        </div>
+        <div class="hero-meta-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Gresik, Jawa Timur</span>
+        </div>
+        <div class="hero-meta-item">
+          <i class="fa-brands fa-instagram"></i>
+          <a href="https://instagram.com/rafipix" target="_blank" rel="noopener">@rafipix</a>
+        </div>
+      </div>
+      
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Lihat Project</a>
+        <a href="#contact" class="btn btn-secondary">Kontak Direct</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Saya Section -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="about-grid">
+        <div class="about-card main-profile">
+          <h3>Profil Profesional</h3>
+          <p>Saya adalah mahasiswa Teknik Informatika di Universitas Muhammadiyah Gresik (semester 6) dengan latar belakang pendidikan SMK jurusan Rekayasa Perangkat Lunak.</p>
+          <p>Memiliki pengalaman praktis di bidang IT Support dan administrasi perkantoran, dengan keahlian utama dalam membangun aplikasi web full-stack menggunakan teknologi PHP, MySQL, dan JavaScript.</p>
+        </div>
+        
+        <div class="about-card key-competencies">
+          <h3>Fokus Keahlian</h3>
+          <ul class="comp-list">
+            <li>
+              <div class="comp-icon"><i class="fa-solid fa-database"></i></div>
+              <div class="comp-text">
+                <strong>Sistem Database Kompleks:</strong> Mahir merancang stored procedure, trigger database, dan optimasi query kompleks untuk efisiensi data.
+              </div>
+            </li>
+            <li>
+              <div class="comp-icon"><i class="fa-solid fa-camera"></i></div>
+              <div class="comp-text">
+                <strong>Integrasi API Browser:</strong> Berpengalaman menerapkan Geolocation API dan penangkapan webcam secara real-time pada browser.
+              </div>
+            </li>
+            <li>
+              <div class="comp-icon"><i class="fa-solid fa-brain"></i></div>
+              <div class="comp-text">
+                <strong>Pemrosesan Bahasa Alami (NLP):</strong> Mampu mengimplementasikan temu kembali informasi menggunakan Vector Space Model, TF-IDF, dan Cosine Similarity.
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="about-card traits-card">
+          <h3>Karakter Kerja</h3>
+          <div class="traits-grid">
+            <div class="trait-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Teliti</span>
+            </div>
+            <div class="trait-item">
+              <i class="fa-solid fa-user-gear"></i>
+              <span>Mampu Bekerja Mandiri</span>
+            </div>
+            <div class="trait-item">
+              <i class="fa-solid fa-users"></i>
+              <span>Kolaboratif dalam Tim</span>
+            </div>
+            <div class="trait-item">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Cepat Beradaptasi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keahlian Section -->
+  <section class="skills" id="skills">
+    <div class="section-container">
+      <h2 class="section-title">Keahlian & Kompetensi</h2>
+      
+      <div class="skills-grid">
+        
+        <!-- Web Development -->
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">PHP (PDO)</span>
+          </div>
+        </div>
+        
+        <!-- Database -->
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fa-solid fa-database"></i>
+            <h3>Database Management</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Stored Procedure</span>
+            <span class="skill-tag">Trigger</span>
+            <span class="skill-tag">Query Kompleks</span>
+          </div>
+        </div>
+
+        <!-- Pemrograman Lain -->
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fa-solid fa-terminal"></i>
+            <h3>Pemrograman Lain</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java (Dasar)</span>
+            <span class="skill-tag">Python (Flask)</span>
+          </div>
+        </div>
+        
+        <!-- Data & NLP -->
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fa-solid fa-diagram-project"></i>
+            <h3>Data & NLP</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Vector Space Model</span>
+            <span class="skill-tag">TF-IDF</span>
+            <span class="skill-tag">Cosine Similarity</span>
+            <span class="skill-tag">Sastrawi</span>
+          </div>
+        </div>
+        
+        <!-- IT & Jaringan -->
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fa-solid fa-network-wired"></i>
+            <h3>IT & Jaringan</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Perakitan & Perbaikan PC</span>
+            <span class="skill-tag">Jaringan LAN/WLAN</span>
+            <span class="skill-tag">Monitoring Jaringan</span>
+          </div>
+        </div>
+        
+        <!-- Administrasi -->
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+            <h3>Administrasi Bisnis</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Microsoft Word/Excel</span>
+            <span class="skill-tag">Purchase Order</span>
+            <span class="skill-tag">Invoice & Kwitansi</span>
+            <span class="skill-tag">Rekapitulasi Keuangan</span>
+          </div>
+        </div>
+        
+        <!-- Bahasa -->
+        <div class="skill-category full-width">
+          <div class="category-header">
+            <i class="fa-solid fa-language"></i>
+            <h3>Kemampuan Bahasa</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">Indonesia (Native)</span>
+            <span class="skill-tag highlight">Inggris (Intermediate/B1)</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <h2 class="section-title">Project Portofolio</h2>
+      <p class="section-subtitle">Daftar project nyata yang telah dikembangkan secara spesifik.</p>
+      
+      <div class="projects-grid">
+        
+        <!-- Project 1: GoLibrary -->
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="visual-logo-wrap">
+              <img src="golibrary terakhir mkpl/assets/images/golibrary.png" alt="GoLibrary Logo" class="project-logo-img">
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">GoLibrary — Sistem Informasi Manajemen Perpustakaan</h3>
+            <p class="project-desc">Sistem manajemen perpustakaan berbasis web untuk mengotomatisasi transaksi peminjaman dan pengembalian buku, kalkulasi denda, serta pembayaran denda non-tunai berbasis QR Code.</p>
+            
+            <div class="project-features">
+              <h4>Fitur Utama:</h4>
+              <ul>
+                <li>Sirkulasi peminjaman terintegrasi database trigger untuk stok buku & kapasitas rak otomatis.</li>
+                <li>Perhitungan denda otomatis (selisih hari × tarif harian).</li>
+                <li>Generate QR Code dinamis di sisi klien (DANA/QRIS) dan unggah bukti bayar.</li>
+                <li>CRUD lengkap data buku, rak fisik, kategori, penulis, dan penerbit.</li>
+                <li>Log audit (activity log) menyimpan aktivitas sistem & IP Address.</li>
+                <li>Ekspor laporan data peminjaman ke format JSON, PDF, dan Excel.</li>
+              </ul>
+            </div>
+            
+            <div class="project-tech">
+              <span class="tech-tag">PHP (PDO)</span>
+              <span class="tech-tag">MySQL (Procedures & Triggers)</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            
+            <div class="project-links">
+              <a href="golibrary terakhir mkpl/" class="btn-link" target="_blank"><i class="fa-solid fa-laptop-code"></i> Demo Proyek</a>
+              <span class="github-placeholder"><i class="fa-brands fa-github"></i> GitHub (Private Repo)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: GoAttend -->
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="visual-logo-wrap">
+              <img src="goattend/assets/image/goattend.png" alt="GoAttend Logo" class="project-logo-img">
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">GoAttend — Aplikasi Absensi Karyawan</h3>
+            <p class="project-desc">Aplikasi absensi karyawan berbasis web dengan metode verifikasi ganda berbasis GPS dan tangkapan kamera front-end untuk memperkuat validitas kehadiran.</p>
+            
+            <div class="project-features">
+              <h4>Fitur Utama:</h4>
+              <ul>
+                <li>Absen masuk (Clock-in) merekam koordinat lintang/bujur GPS dan memotret wajah via webcam.</li>
+                <li>Absen pulang (Clock-out) memverifikasi jam pulang secara mandiri dan aman.</li>
+                <li>Pengajuan Koreksi Absensi untuk perbaikan data kehadiran yang terlewat.</li>
+                <li>Pengajuan permohonan Cuti kerja dan rekapitulasi data permohonan.</li>
+                <li>Verifikasi persetujuan admin untuk izin cuti dan koreksi data kehadiran di dashboard.</li>
+                <li>CRUD data jabatan, peran (Role: Karyawan / Admin), dan biodata karyawan.</li>
+              </ul>
+            </div>
+            
+            <div class="project-tech">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">HTML5 Geolocation API</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            
+            <div class="project-links">
+              <a href="goattend/" class="btn-link" target="_blank"><i class="fa-solid fa-laptop-code"></i> Demo Proyek</a>
+              <span class="github-placeholder"><i class="fa-brands fa-github"></i> GitHub (Private Repo)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Heritage Cafe -->
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="visual-logo-wrap dark-bg">
+              <img src="heritagecafe/img/heritage.png" alt="Heritage Cafe Logo" class="project-logo-img">
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Heritage Cafe — Platform Pemesanan Kafe</h3>
+            <p class="project-desc">Platform pesanan e-commerce kafe berbasis meja menggunakan scan QR Code yang terhubung langsung dengan SIM admin kafe.</p>
+            
+            <div class="project-features">
+              <h4>Fitur Utama:</h4>
+              <ul>
+                <li>Scan QR meja untuk pemesanan mandiri tanpa login (identifikasi meja otomatis).</li>
+                <li>Keranjang belanja persisten berbasis Local Storage browser.</li>
+                <li>Pelacakan status pengerjaan pesanan 4 tahap di dapur kafe secara real-time.</li>
+                <li>Sistem login admin dengan keamanan Triple Authentication (Username + Password + PIN 6-Digit).</li>
+                <li>Dashboard analitik menyajikan omzet rupiah harian, jumlah pesanan, dan menu terlaris.</li>
+                <li>Log audit keuangan lengkap dengan pencatatan IP Address admin.</li>
+              </ul>
+            </div>
+            
+            <div class="project-tech">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL (Stored Procedures)</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Local Storage</span>
+            </div>
+            
+            <div class="project-links">
+              <a href="heritagecafe/" class="btn-link" target="_blank"><i class="fa-solid fa-laptop-code"></i> Demo Proyek</a>
+              <span class="github-placeholder"><i class="fa-brands fa-github"></i> GitHub (Private Repo)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: STKI Mie Gacoan -->
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="visual-logo-wrap stki-bg">
+              <div class="stki-logo-text">
+                <span class="stki-abbr">STKI</span>
+                <span class="stki-sub">Mie Gacoan</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">STKI Mie Gacoan — Sistem Temu Kembali Ulasan</h3>
+            <p class="project-desc">Sistem temu kembali informasi ulasan restoran berbasis Vector Space Model (VSM) dan NLP Bahasa Indonesia untuk mengatasi ulasan slang dan salah ketik.</p>
+            
+            <div class="project-features">
+              <h4>Fitur Utama:</h4>
+              <ul>
+                <li>Mesin pencarian ulasan terurut menggunakan pembobotan TF-IDF dan Cosine Similarity.</li>
+                <li>Pipeline NLP: Tokenisasi, Case Folding, Stopword Removal, dan Stemming Sastrawi.</li>
+                <li>Normalisasi slang otomatis dengan kamus internal (slang mapping).</li>
+                <li>Daftar kata dilindungi (Protected Words) untuk menjaga nama entitas/brand.</li>
+                <li>Visualisasi detail setiap langkah preprocessing teks pada dokumen.</li>
+                <li>Tabel interaktif ekstraksi fitur berisi nilai frekuensi kata (dfi) dan matriks TF-IDF.</li>
+                <li>Klasifikasi sentimen (Positif, Netral, Negatif) otomatis berdasarkan rating ulasan.</li>
+              </ul>
+            </div>
+            
+            <div class="project-tech">
+              <span class="tech-tag">Python (Flask)</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Sastrawi (NLP)</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            
+            <div class="project-links">
+              <a href="STKI/" class="btn-link" target="_blank"><i class="fa-solid fa-laptop-code"></i> Demo Proyek</a>
+              <span class="github-placeholder"><i class="fa-brands fa-github"></i> GitHub (Private Repo)</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Pendidikan Section -->
+  <section class="education" id="education">
+    <div class="section-container">
+      <h2 class="section-title">Riwayat Pendidikan</h2>
+      
+      <div class="timeline">
+        
+        <!-- Universitas -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 - Sekarang (Semester 6)</span>
+            <h3>S1 Teknik Informatika</h3>
+            <h4>Universitas Muhammadiyah Gresik</h4>
+            <p>Fokus studi pada pemrograman web, sistem basis data, rekayasa perangkat lunak, dan kecerdasan buatan/NLP.</p>
+          </div>
+        </div>
+        
+        <!-- SMK -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">2019 - 2022</span>
+            <h3>Rekayasa Perangkat Lunak (RPL)</h3>
+            <h4>SMK Semen Gresik</h4>
+            <p>Mempelajari dasar-dasar algoritma pemrograman, perancangan database, pemrograman berorientasi objek (PBO), serta pengembangan aplikasi desktop dan web.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Pengalaman Kerja Section -->
+  <section class="experience" id="experience">
+    <div class="section-container">
+      <h2 class="section-title">Pengalaman Kerja</h2>
+      
+      <div class="experience-list">
+        
+        <!-- CV Kerja Bahagia Sejahtera -->
+        <div class="experience-card">
+          <div class="exp-header">
+            <div class="exp-role">
+              <h3>Staff Administrasi</h3>
+              <h4>CV. Kerja Bahagia Sejahtera</h4>
+            </div>
+            <span class="exp-date">Februari - Oktober 2023</span>
+          </div>
+          <div class="exp-body">
+            <ul class="exp-tasks">
+              <li>Membuat dokumen purchase order (PO) untuk pemesanan barang ke mitra/supplier.</li>
+              <li>Menyusun invoice, kwitansi, dan tanda terima tagihan untuk transaksi pelanggan.</li>
+              <li>Membuat rekapitulasi data keuangan bulanan menggunakan Microsoft Excel.</li>
+              <li>Memastikan kelengkapan, validasi, dan keakuratan seluruh berkas administrasi kantor.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- PT Cipta Nirmala -->
+        <div class="experience-card">
+          <div class="exp-header">
+            <div class="exp-role">
+              <h3>IT Support (Magang)</h3>
+              <h4>PT. Cipta Nirmala, RS Semen Gresik</h4>
+            </div>
+            <span class="exp-date">Juli - Desember 2021</span>
+          </div>
+          <div class="exp-body">
+            <ul class="exp-tasks">
+              <li>Merakit perangkat keras komputer (PC) baru dan mengonfigurasinya sesuai kebutuhan unit rumah sakit.</li>
+              <li>Melakukan instalasi dan troubleshooting aplikasi sistem informasi rumah sakit (SIRS) pada komputer staf.</li>
+              <li>Instalasi kabel jaringan LAN (Crimping RJ-45) dan konfigurasi perangkat WLAN/WiFi pada ruangan pasien & dokter.</li>
+              <li>Melakukan monitoring rutin, pemeliharaan perangkat jaringan komputer, serta perbaikan konektivitas.</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <h2 class="section-title">Hubungi Saya</h2>
+      <p class="section-subtitle">Mari berdiskusi tentang peluang kerja, kolaborasi proyek, atau pengembangan web.</p>
+      
+      <div class="contact-grid">
+        
+        <!-- Kontak Info Cards -->
+        <div class="contact-info">
+          <h3>Informasi Kontak Direct</h3>
+          
+          <div class="contact-card-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>muhammadrafipratamaputra00@gmail.com</p>
+              <button class="btn btn-sm btn-secondary copy-btn-text" data-copy="muhammadrafipratamaputra00@gmail.com">
+                <i class="fa-regular fa-copy"></i> Salin Email
+              </button>
+            </div>
+          </div>
+          
+          <div class="contact-card-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>WhatsApp</h4>
+              <p>085137116287</p>
+              <a href="https://wa.me/6285137116287" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                <i class="fa-brands fa-whatsapp"></i> Hubungi WA
+              </a>
+            </div>
+          </div>
+          
+          <div class="contact-card-item">
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+              <h4>Instagram</h4>
+              <p>@rafipix</p>
+              <a href="https://instagram.com/rafipix" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Quick Message Info -->
+        <div class="contact-social">
+          <h3>Profil Digital & Repositori</h3>
+          <p>Anda dapat meninjau repositori proyek atau profil profesional saya pada platform di bawah ini:</p>
+          
+          <div class="social-links-container">
+            <a href="https://www.linkedin.com/in/muhammad-rafi-pratama-putra-1b66952bb/" target="_blank" rel="noopener" class="social-btn">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/rafihq" target="_blank" rel="noopener" class="social-btn">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+          
+          <div class="contact-note">
+            <i class="fa-solid fa-circle-info"></i>
+            <p>Untuk kode sumber lengkap (source code) proyek GoLibrary, GoAttend, Heritage Cafe, dan STKI, silakan hubungi saya langsung untuk akses repositori pribadi.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Muhammad Rafi Pratama Putra. All Rights Reserved.</p>
+      <p class="footer-credit">Didisain dengan konsep minimalis, elegan, dan profesional.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification for Clipboard Copying -->
+  <div class="toast" id="toast">Berhasil disalin ke papan klip!</div>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
